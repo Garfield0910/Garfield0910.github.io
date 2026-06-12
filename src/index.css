@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #3c2830;
+  background:
+    radial-gradient(circle at top left, rgba(255, 251, 251, 0.96), transparent 38%),
+    linear-gradient(180deg, #fff3f5 0%, #f8e8ec 48%, #f5dfe5 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --font-body: 'Aptos', 'PingFang SC', 'Microsoft YaHei UI', sans-serif;
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', 'Songti SC', serif;
+  --ink: #3c2830;
+  --muted: rgba(91, 65, 75, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.82), transparent 25%),
+    radial-gradient(circle at 100% 10%, rgba(242, 189, 205, 0.42), transparent 22%),
+    linear-gradient(180deg, #fff3f6 0%, #f9e9ed 46%, #f5dce3 100%);
+}
+
+body.intro-locked {
+  height: 100vh;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+body::before {
+  top: -120px;
+  left: -40px;
+  width: 320px;
+  height: 320px;
+  background: rgba(255, 197, 215, 0.46);
+}
+
+body::after {
+  right: -60px;
+  bottom: 40px;
+  width: 360px;
+  height: 360px;
+  background: rgba(232, 167, 190, 0.34);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
