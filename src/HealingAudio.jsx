@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { siteAsset } from './siteAssets'
 
 function HealingAudio() {
   const audioRef = useRef(null)
@@ -52,7 +53,7 @@ function HealingAudio() {
 
   return (
     <>
-      <audio ref={audioRef} src="/assets/background-piano.mp3" loop preload="auto" />
+      <audio ref={audioRef} src={siteAsset('background-piano.mp3')} loop preload="auto" />
       <button
         className={`sound-control ${isPlaying ? 'is-playing' : ''}`}
         type="button"

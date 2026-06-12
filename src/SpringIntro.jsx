@@ -1,3 +1,5 @@
+import { siteAsset } from './siteAssets'
+
 const petals = Array.from({ length: 30 }, (_, index) => ({
   x: (index * 19 + 5) % 104,
   y: (index * 31 + 9) % 82,
@@ -13,10 +15,10 @@ function SpringIntro({ phase }) {
   return (
     <div className={`spring-intro spring-intro--${phase}`} aria-hidden="true">
       <div className="spring-intro__scene spring-intro__scene--grove">
-        <img src="/assets/pink-canopy.png" alt="" />
+        <img src={siteAsset('pink-canopy.png')} alt="" />
       </div>
       <div className="spring-intro__scene spring-intro__scene--wind">
-        <img src="/assets/intro-sakura-wind.png" alt="" />
+        <img src={siteAsset('intro-sakura-wind.png')} alt="" />
       </div>
 
       <div className="spring-intro__sun" />

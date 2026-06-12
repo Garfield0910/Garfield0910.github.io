@@ -1,18 +1,20 @@
+import { siteAsset } from './siteAssets'
+
 const scenes = [
   {
-    src: '/assets/pink-window.png',
+    src: siteAsset('pink-window.png'),
     className: 'hero-backdrop__scene--window',
   },
   {
-    src: '/assets/pink-flower-sea.png',
+    src: siteAsset('pink-flower-sea.png'),
     className: 'hero-backdrop__scene--canopy',
   },
   {
-    src: '/assets/pink-water-garden.png',
+    src: siteAsset('pink-water-garden.png'),
     className: 'hero-backdrop__scene--flowers',
   },
   {
-    src: '/assets/pink-dancer.png',
+    src: siteAsset('pink-dancer.png'),
     className: 'hero-backdrop__scene--dancer',
   },
 ]

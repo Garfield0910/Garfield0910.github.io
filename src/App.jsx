@@ -4,6 +4,7 @@ import BotanicalRibbon from './BotanicalRibbon'
 import FlowerTrail from './FlowerTrail'
 import HealingAudio from './HealingAudio'
 import HeroBackdrop from './HeroBackdrop'
+import { siteAsset } from './siteAssets'
 import SpringIntro from './SpringIntro'
 import { navigation, profile, strengths, visualNotes } from './content'
 
@@ -220,7 +221,7 @@ function App() {
               >
                 <img
                   className="portrait-card__image"
-                  src="/assets/pink-portrait.png"
+                  src={siteAsset('pink-portrait.png')}
                   alt="夏日绿荫与白花组成的诗意自然头像"
                 />
                 <div className="portrait-card__image-shade" aria-hidden="true" />
